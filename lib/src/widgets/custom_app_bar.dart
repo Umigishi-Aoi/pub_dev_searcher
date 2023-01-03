@@ -6,7 +6,8 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: const Text('Pub Dev Searcher',
+      title: const Text(
+        'Pub Dev Searcher',
       ),
     );
   }
