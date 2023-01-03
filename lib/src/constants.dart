@@ -1,12 +1,22 @@
 import 'package:flutter/material.dart';
 
+//Settings
+const int kDisplayPackagesNumber = 100;
+const int kSearchedPackageNumber = 10;
+
 //Layout related
 const double kSearchBarHeight = 70;
 const double kSearchBarLeftPadding = 10;
 const double kTextFieldHorizontalPadding = 40;
-const double kSearchBarBorderRadius = 50;
+const double kBorderRadius = 50;
 const double kSearchBarIconSize = 40;
 const double kSearchBarIconRightPadding = 16;
+const double kPackageNameRightMargin = 8;
+const double kTitleShimmerHeight = 24;
+const double kTitleShimmerWidth = 100;
+const double kVersionShimmerWidth = 40;
+const double kSubTitleShimmerHeight = 16;
+const double kShimmerVerticalPadding = 8;
 
 //Colors
 const Color kSeedColor = Color(0xFF1c2834);

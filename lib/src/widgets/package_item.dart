@@ -23,9 +23,12 @@ class PackageItem extends StatelessWidget {
       onTap: onTap,
       title: Row(
         children: [
-          Text(
-            name,
-            style: kPackageNameTextStyle,
+          Padding(
+            padding: const EdgeInsets.only(right: kPackageNameRightMargin),
+            child: Text(
+              name,
+              style: kPackageNameTextStyle,
+            ),
           ),
           Text(version)
         ],

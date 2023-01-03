@@ -3,6 +3,7 @@ import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import '../widgets/custom_app_bar.dart';
+import '../widgets/package_item.dart';
 import '../widgets/search_bar.dart';
 
 class SearchPage extends HookConsumerWidget {
@@ -23,7 +24,18 @@ class SearchPage extends HookConsumerWidget {
               onRefresh: () {
                 return Future<void>.delayed(const Duration(seconds: 1));
               },
-              child: Container(),
+              child: ListView.builder(
+                itemCount: 100,
+                itemBuilder: (context, index) {
+                  return PackageItem(
+                    name: 'package_name',
+                    description: 'package_description',
+                    version: 'package_version',
+                    onTap: () {},
+                  );
+                  // return const PackageItemShimmer();
+                },
+              ),
             ),
           ),
         ],

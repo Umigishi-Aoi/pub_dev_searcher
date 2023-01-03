@@ -18,7 +18,7 @@ class SearchBar extends StatelessWidget {
           ),
           decoration: BoxDecoration(
             color: kSearchBarBackgroundColor,
-            borderRadius: BorderRadius.circular(kSearchBarBorderRadius),
+            borderRadius: BorderRadius.circular(kBorderRadius),
           ),
           child: Padding(
             padding: const EdgeInsets.only(left: kSearchBarLeftPadding),
