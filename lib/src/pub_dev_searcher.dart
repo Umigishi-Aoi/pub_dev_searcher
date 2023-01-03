@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'constants.dart';
 import 'pages/search_page.dart';
 
 class PubDevSearcher extends StatelessWidget {
@@ -9,9 +10,9 @@ class PubDevSearcher extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Pub.dev Searcher',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        useMaterial3: true,
-        colorSchemeSeed: Colors.grey,
+        colorSchemeSeed: kSeedColor,
       ),
       home: const SearchPage(),
     );

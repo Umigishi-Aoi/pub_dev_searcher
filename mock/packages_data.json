@@ -1,0 +1,11 @@
+{
+  "packages":[
+    {
+        "name": "Package 1",
+        "latest": {
+            "version": "1.0.0",
+            "pubspec": {}
+        }
+    }
+  ]
+}
