@@ -5,6 +5,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import '../widgets/custom_app_bar.dart';
 import '../widgets/package_item.dart';
 import '../widgets/search_bar.dart';
+import 'detail_page.dart';
 
 class SearchPage extends HookConsumerWidget {
   const SearchPage({super.key});
@@ -31,7 +32,14 @@ class SearchPage extends HookConsumerWidget {
                     name: 'package_name',
                     description: 'package_description',
                     version: 'package_version',
-                    onTap: () {},
+                    onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute<void>(
+                        builder: (context) => const DetailPage(
+                          packageName: 'packageName',
+                        ),
+                      ),
+                    ),
                   );
                   // return const PackageItemShimmer();
                 },
