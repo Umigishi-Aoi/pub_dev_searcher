@@ -39,11 +39,11 @@ class PackageItemShimmer extends StatelessWidget {
           ],
         ),
         subtitle: Padding(
-          padding: const EdgeInsets.only(top: kShimmerVerticalPadding),
+          padding: const EdgeInsets.only(top: kVerticalPadding),
           child: Column(
             children: [
               description,
-              const SizedBox(height: kShimmerVerticalPadding),
+              const SizedBox(height: kVerticalPadding),
               description,
             ],
           ),
