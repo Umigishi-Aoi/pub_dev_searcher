@@ -18,6 +18,14 @@ class SearchPage extends HookConsumerWidget {
           SearchBar(
             controller: controller,
           ),
+          Expanded(
+            child: RefreshIndicator(
+              onRefresh: () {
+                return Future<void>.delayed(const Duration(seconds: 1));
+              },
+              child: Container(),
+            ),
+          ),
         ],
       ),
     );
